@@ -26,7 +26,7 @@ const AssetForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/assets', assetData);
+      const response = await axios.post('http://localhost:3001/api/assets', assetData);
       alert('Asset created successfully!');
       setAssetData({
         name: '',
@@ -46,7 +46,7 @@ const AssetForm = () => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: 'linear-gradient(to right,rgb(112, 62, 102),rgb(238, 13, 238))',
+    background: '#fff',
     fontFamily: '"Poppins", sans-serif',
     padding: '20px',
   };
@@ -57,7 +57,7 @@ const AssetForm = () => {
     background: '#fff',
     borderRadius: '16px',
     padding: '30px',
-    boxShadow: '16px 8px 16px rgba(0, 0, 0, 0.2)',
+    boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.2)',
   };
 
   const labelStyle = {
