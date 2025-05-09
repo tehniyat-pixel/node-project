@@ -26,7 +26,7 @@ const AssetForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://tarry-gamy-palm.glitch.me/api/assets', assetData);
+      const response = await axios.post('https://asset-management-backend-ten.vercel.app/api/assets', assetData);
       alert('Asset created successfully!');
       setAssetData({
         name: '',
