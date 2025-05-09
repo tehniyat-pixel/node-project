@@ -26,7 +26,7 @@ const AssetForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://asset-managemen.vercel.app//api/assets', assetData);
+      const response = await axios.post('https://asset-managemen.vercel.app/api/assets', assetData);
       alert('Asset created successfully!');
       setAssetData({
         name: '',
