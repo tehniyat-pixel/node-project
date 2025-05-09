@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000',  // your React app, NOT backend port!
+  origin: 'https://asset-management-frontend-one.vercel.app',  // your React app, NOT backend port!
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
