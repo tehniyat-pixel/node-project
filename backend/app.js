@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(cors({
   origin: 'https://asset-management-frontend-one.vercel.app',  // your React app, NOT backend port!
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
 
 // AdminJS config
